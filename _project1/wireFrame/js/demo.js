@@ -29,8 +29,20 @@ app.config(function ($routeProvider) {
 			templateUrl: 'pages/_product.html',
 			controller: 'productController'
 		})
-		.when('/about', {
-			template: '<h1>this is my about page!</h1>'
+		.when('/courses', {
+			template: '<h1>this is my courses page!</h1>'
+		})
+		.when('/registrationUser', {
+			template: '<h1>this is my registrationUser page!</h1>'
+		})
+		.when('/registrationAdmin', {
+			template: '<h1>this is my registrationAdmin page!</h1>'
+		})
+		.when('/meetTheStaff', {
+			template: '<h1>this is my meetTheStaff page!</h1>'
+		})
+		.when('/contact', {
+			template: '<h1>this is my contact page!</h1>'
 		})
 		.otherwise({
 			template: '<h1>404. Page not found!</h1>'
