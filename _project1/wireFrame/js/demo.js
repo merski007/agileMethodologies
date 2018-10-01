@@ -4,7 +4,7 @@ var app = angular.module('shopDemo', ['ui.bootstrap', 'ngRoute']);
 // define some global variables available to the entire app
 app.run(function ($rootScope, $location) {
 	var d = new Date();
-	$rootScope.appName = 'Shop Demo';
+	$rootScope.appName = 'KB Training';
 	$rootScope.copyright = d.getFullYear();
 	$rootScope.isActive = function (viewPath) {
 		return viewPath == $location.path();
@@ -62,8 +62,8 @@ app.controller('productController', function ($scope, $routeParams) {
 	// https://morgul.github.io/ui-bootstrap4/#!#carousel
 	$scope.slides = [
 		{ image: '//unsplash.it/900/350?random&1', text: 'Hey, look at me!', id: 0 },
-		{ image: '//unsplash.it/900/350?random&2', text: 'You need this!', id: 1 },
-		{ image: '//unsplash.it/900/350?random&3', text: 'Give me your money!', id: 2 }
+		{ image: '//unsplash.it/900/3580?random&2', text: 'You need this!', id: 1 },
+		{ image: '//unsplash.it/900/3580?random&3', text: 'Give me your money!', id: 2 }
 	];
 
 	// demo of alerts
@@ -85,8 +85,8 @@ app.controller('homeController', function ($scope) {
 	// homepage slide show
 	// https://morgul.github.io/ui-bootstrap4/#!#carousel
 	$scope.slides = [
-		{ image: '//unsplash.it/900/350?random&1', text: 'Hey, look at me!', id: 0 },
-		{ image: '//unsplash.it/900/350?random&2', text: 'You need this!', id: 1 },
-		{ image: '//unsplash.it/900/350?random&3', text: 'Give me your money!', id: 2 }
+		{ image: '//unsplash.it/1200/800?random&1', text: 'Hey, look at me!', id: 0 },
+		{ image: '//unsplash.it/1200/800?random&2', text: 'You need this!', id: 1 },
+		{ image: '//unsplash.it/1200/800?random&3', text: 'Give me your money!', id: 2 }
 	];
 });
