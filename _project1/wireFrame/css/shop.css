@@ -7,6 +7,11 @@
 body {
   padding-top: 54px;
 }
+.container-fluid.full-width {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+}
 
 @media (min-width: 992px) {
   body {
