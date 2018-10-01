@@ -82,5 +82,11 @@ app.controller('productController', function ($scope, $routeParams) {
 
 // Home controler
 app.controller('homeController', function ($scope) {
-
+	// homepage slide show
+	// https://morgul.github.io/ui-bootstrap4/#!#carousel
+	$scope.slides = [
+		{ image: '//unsplash.it/900/350?random&1', text: 'Hey, look at me!', id: 0 },
+		{ image: '//unsplash.it/900/350?random&2', text: 'You need this!', id: 1 },
+		{ image: '//unsplash.it/900/350?random&3', text: 'Give me your money!', id: 2 }
+	];
 });

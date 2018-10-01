@@ -1,4 +1,21 @@
-<div class="jumbotron text-center">
-    <h1>Welcome to {{appName}}!</h1>
-    <p>Buy our stuff!</p>
+<div class="row">
+
+    <div class="col-lg-9">
+
+        <!-- UIB Carousel -->
+        <div style="height: 350px" class="my-4">
+            <div uib-carousel active="0" interval="3000" template-url="vendor/ui-bootstrap/template/carousel/carousel.html">
+                <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id"> <img ng-src="{{slide.image}}">
+                    <div class="carousel-caption">
+                        <h4>Slide Title</h4>
+                        <p>{{slide.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.col-lg-9 -->
+
 </div>
+<!-- /.row -->
