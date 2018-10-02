@@ -13,6 +13,10 @@ body {
     overflow-x: hidden;
 }
 
+.footer {
+    display:none;
+}
+
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
