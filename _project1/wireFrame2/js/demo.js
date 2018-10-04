@@ -1,5 +1,5 @@
 // JavaScript Document
-var app = angular.module('shopDemo', ['ui.bootstrap', 'ngRoute']);
+var app = angular.module('demo', ['ngRoute']);
 
 // define some global variables available to the entire app
 app.run(function ($rootScope, $location) {
@@ -10,6 +10,7 @@ app.run(function ($rootScope, $location) {
 		return viewPath == $location.path();
 	}
 });
+
 
 // configure our routes
 // urls that map to views/controllers
@@ -33,10 +34,10 @@ app.config(function ($routeProvider) {
 			template: '<h1>this is my courses page!</h1>'
 		})
 		.when('/registrationUser', {
-			template: '<h1>this is my registrationUser page!</h1>'
+			templateUrl: 'pages/registrationUser.html'
 		})
 		.when('/registrationAdmin', {
-			template: '<h1>this is my registrationAdmin page!</h1>'
+			templateUrl: 'pages/registrationAdmin.html'
 		})
 		.when('/meetTheStaff', {
 			template: '<h1>this is my meetTheStaff page!</h1>'
