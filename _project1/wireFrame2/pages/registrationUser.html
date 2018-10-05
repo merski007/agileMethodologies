@@ -9,55 +9,117 @@
         </div>
         <div class="card-body">
             <form class="form" role="form" autocomplete="off">
+                <h5>Contact Info</h5>
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label">First name</label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="text" value="Jane">
+                        <input class="form-control" type="text" placeholder="Neil">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label">Last name</label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="text" value="Bishop">
+                        <input class="form-control" type="text" placeholder="Armstrong">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Job Title</label>
+                    <div class="col-lg-9">
+                        <input class="form-control" type="text" placeholder="Astronaut">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Phone</label>
+                    <div class="col-lg-9">
+                        <input class="form-control" type="text" placeholder="(202) 358-0001">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label">Email</label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="email" value="email@gmail.com">
+                        <input class="form-control" type="email" placeholder="neil.armstrong@nasa.com">
                     </div>
                 </div>
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Company</label>
+                    <div class="col-lg-9">
+                        <select id="user_company" class="form-control" size="0">
+                            <option value=""></option>
+                            <option value="WCTC">WCTC</option>
+                            <option value="GE">GE</option>
+                            <option value="Microsoft">Microsoft</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <!--
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label">Company</label>
                     <div class="col-lg-9">
                         <input class="form-control" type="text" value="">
                     </div>
                 </div>
+                -->
                 <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label">Website</label>
+                    <label class="col-lg-3 col-form-label form-control-label">Gender</label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="url" value="">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label">Time Zone</label>
-                    <div class="col-lg-9">
-                        <select id="user_time_zone" class="form-control" size="0">
-                            <option value="Hawaii">(GMT-10:00) Hawaii</option>
-                            <option value="Alaska">(GMT-09:00) Alaska</option>
-                            <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
-                            <option value="Arizona">(GMT-07:00) Arizona</option>
-                            <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
-                            <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
-                            <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
-                            <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                        <select id="user_gender" class="form-control" size="0">
+                            <option value=""></option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="NA">Choose not to answer...</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Birthdate</label>
+                    <div class="col-lg-9">
+                        <input class="form-control" type="text" placeholder="07/21/1969">
+                    </div>
+                </div>
+                <hr>
+                <h5>Address Info</h5>
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Address 1</label>
+                    <div class="col-lg-9">
+                        <input class="form-control" type="text" placeholder="Kennedy Space Center">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Address 2</label>
+                    <div class="col-lg-9">
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">City</label>
+                    <div class="col-lg-9">
+                        <input class="form-control" type="text" placeholder="Cape Canaveral">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">State</label>
+                    <div class="col-lg-9">
+                        <select id="user_gender" class="form-control" size="0">
+                            <option value=""></option>
+                            <option value="FL">Florida</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="WI">Wisconsin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Zip</label>
+                    <div class="col-lg-9">
+                        <input class="form-control" type="text" placeholder="32899">
+                    </div>
+                </div>
+                <hr>
+                <h5>Username and Password</h5>
+                <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label">Username</label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="text" value="janeuser">
+                        <input class="form-control" type="text" placeholder="moonman1969">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -82,4 +144,6 @@
             </form>
         </div>
     </div>
+    <br>
+    <br>
     <!-- /form user info -->
