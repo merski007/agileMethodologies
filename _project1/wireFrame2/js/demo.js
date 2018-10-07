@@ -91,6 +91,9 @@ app.controller('productController', function ($scope, $routeParams) {
 	$scope.closeAlert = function (index) {
 		$scope.alerts.splice(index, 1);
 	};
+
+
+
 });
 
 // Home controler
