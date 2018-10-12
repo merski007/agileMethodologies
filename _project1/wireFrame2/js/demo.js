@@ -39,6 +39,12 @@ app.config(function ($routeProvider) {
 		.when('/registrationAdmin', {
 			templateUrl: 'pages/registrationAdmin.html'
 		})
+		.when('/usersAdmin', {
+			templateUrl: 'pages/usersAdmin.html'
+		})
+		.when('/coursesAdmin', {
+			templateUrl: 'pages/coursesAdmin.html'
+		})
 		.when('/meetTheStaff', {
 			template: '<h1>this is my meetTheStaff page!</h1>'
 		})

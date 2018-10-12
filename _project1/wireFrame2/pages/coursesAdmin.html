@@ -1,0 +1,491 @@
+<div class="container">
+    <h2>Admin Controller</h2>
+    <p>Use the tabs below to modify users, update courses, and register users for courses</p>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#users">Users</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#courses">Courses</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#registration">Registration</a>
+        </li>
+    </ul>
+</div>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <!-- tab 1 -->
+    <div id="users" class="container tab-pane"><br>
+        <div class="col-md-8 offset-md-2">
+            <div class="card-body">
+                <div class="card card-outline-secondary">
+                    <div class="card-header">
+                        <h3 class="mb-0">Search for user</h3>
+                    </div>
+                    <div class="card-body">
+                        <form class="form" role="form" autocomplete="off">
+                            <h5>User info</h5>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">User ID</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="text" placeholder="1234">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="text" placeholder="Neil">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Last Name</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="text" placeholder="Armstrong">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="email" placeholder="neil.armstrong@nasa.com">
+                                </div>
+                            </div>
+                            <input type="button" class="btn btn-primary" value="Search" style="float: right;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <!-- form user info -->
+                <div class="card card-outline-secondary">
+                    <div class="card-header">
+                        <h3 class="mb-0">User Information</h3>
+                    </div>
+                    <div class="card-body">
+                        <form class="form" role="form" autocomplete="off">
+                            <h5>Contact Info</h5>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="text" placeholder="Neil">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="text" placeholder="Armstrong">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Job Title</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="text" placeholder="Astronaut">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Phone</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="text" placeholder="(202) 358-0001">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="email" placeholder="neil.armstrong@nasa.com">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Company</label>
+                                <div class="col-lg-9">
+                                    <select id="user_company" class="form-control" size="0">
+                                        <option value=""></option>
+                                        <option value="WCTC">WCTC</option>
+                                        <option value="GE">GE</option>
+                                        <option value="Microsoft">Microsoft</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Gender</label>
+                                <div class="col-lg-9">
+                                    <select id="user_gender" class="form-control" size="0">
+                                        <option value=""></option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="NA">Choose not to answer...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Birthdate</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="text" placeholder="07/21/1969">
+                                </div>
+                            </div>
+                            <hr>
+                            <h5>Address Info</h5>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Address 1</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="text" placeholder="Kennedy Space Center">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Address 2</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">City</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="text" placeholder="Cape Canaveral">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">State</label>
+                                <div class="col-lg-9">
+                                    <select id="user_gender" class="form-control" size="0">
+                                        <option value=""></option>
+                                        <option value="FL">Florida</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="WI">Wisconsin</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Zip</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="text" placeholder="32899">
+                                </div>
+                            </div>
+                            <hr>
+                            <h5>Username and Password</h5>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Username</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="text" placeholder="moonman1969">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Password</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="password" value="11111122333">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Confirm</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="password" value="11111122333">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label"></label>
+                                <div class="col-lg-9">
+                                    <input type="reset" class="btn btn-secondary" value="Cancel">
+                                    <input type="button" class="btn btn-primary" value="Save Changes">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /form user info -->
+        </div>
+    </div>
+
+    <!-- tab 2 -->
+    <div id="courses" class="container tab-pane active"><br>
+        <div class="card-body">
+            <div class="card card-outline-secondary">
+                <div class="card-header">
+                    <h3 class="mb-0">Search for Course</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form" role="form" autocomplete="off">
+                        <h5>Course info</h5>
+                        <div class="form-group row">
+                            <label class="col-sm-5 pb-3">Course ID</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" placeholder="12-001">
+                            </div>
+                            <input type="button" class="btn btn-primary" value="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="card card-outline-secondary">
+                <div class="card-header">
+                    <h3 class="mb-0">Enter Course Information</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form" role="form" autocomplete="off">
+                        <div class="form-row mt-4">
+                            <div class="col-sm-5 pb-3">
+                                <label for="exampleAccount">Course Name</label>
+                                <input type="text" class="form-control" id="exampleAccount" placeholder="How to master Waterfall SDLC">
+                            </div>
+                            <div class="col-sm-3 pb-3">
+                                <label for="exampleCtrl">Course ID</label>
+                                <input type="text" class="form-control" id="exampleCtrl" placeholder="12-001">
+                            </div>
+                            <div class="col-sm-4 pb-3">
+                                <label for="exampleAmount">Amount</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+                                    <input type="text" class="form-control" id="exampleAmount" placeholder="499.00">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pb-3">
+                                <label for="exampleFirst">Description</label>
+                                <input type="text" class="form-control" id="exampleFirst">
+                            </div>
+                            <div class="col-sm-6 pb-3">
+                                <label for="exampleCity">Duration</label>
+                                <input type="text" class="form-control" id="exampleCity">
+                            </div>
+                            <div class="col-md-6 pb-3">
+                                <label for="exampleAccount">Skill Requirement</label>
+                                <div class="form-group small">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Technology
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Human Resources
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline disabled">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled=""> Management
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option4"> Inter-Personal Skills
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pb-3">
+                                <div class="form-row">
+                                    <label class="col-lg-3 col-form-label form-control-label"></label>
+                                    <div class="col-lg-9">
+                                        <input type="reset" class="btn btn-secondary" value="Cancel">
+                                        <input type="button" class="btn btn-primary" value="Save Changes">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tab 3-->
+    <div id="registration" class="container tab-pane"><br>
+        <div class="card-body">
+            <div class="card card-outline-secondary">
+                <div class="card-header">
+                    <h3 class="mb-0">Find Existing Registration</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form" role="form" autocomplete="off">
+                        <h5>Registration Info</h5>
+                        <div class="form-group row">
+                            <label class="col-sm-5 pb-3">Registration ID</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" placeholder="1234">
+                            </div>
+                            <input type="button" class="btn btn-primary" value="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="card card-outline-secondary">
+                <div class="card-header">
+                    <h3 class="mb-0">Registration Information</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form" role="form" autocomplete="off">
+                        <div class="form-row mt-4">
+                            <div class="col-sm-5 pb-3">
+                                <label for="exampleAccount">Session ID</label>
+                                <input type="text" class="form-control" id="exampleAccount" placeholder="Fall-18-1">
+                            </div>
+                            <div class="col-sm-3 pb-3">
+                                <label for="exampleCtrl">Customer ID</label>
+                                <input type="text" class="form-control" id="exampleCtrl" placeholder="1234">
+                            </div>
+                            <div class="col-sm-6 pb-3">
+                                <label for="exampleCity">Discount</label>
+                                <input type="text" class="form-control" id="exampleCity">
+                            </div>
+                            <div class="col-md-9 pb-3">
+                                <label for="exampleAccount">Paid</label>
+                                <div class="form-group small">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9 pb-3">
+                                <label for="exampleAccount">Attended</label>
+                                <div class="form-group small">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pb-3">
+                                <div class="form-row">
+                                    <label class="col-lg-3 col-form-label form-control-label"></label>
+                                    <div class="col-lg-9">
+                                        <input type="reset" class="btn btn-secondary" value="Cancel">
+                                        <input type="button" class="btn btn-primary" value="Save Changes">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!--
+<div class="col-md-10 offset-md-1">
+    <span class="anchor" id="formComplex"></span>
+    <hr class="my-5">
+    <h3>Complex Form Example </h3>
+
+    <!-- form complex example 
+    <div class="form-row mt-4">
+        <div class="col-sm-5 pb-3">
+            <label for="exampleAccount">Account #</label>
+            <input type="text" class="form-control" id="exampleAccount" placeholder="XXXXXXXXXXXXXXXX">
+        </div>
+        <div class="col-sm-3 pb-3">
+            <label for="exampleCtrl">Control #</label>
+            <input type="text" class="form-control" id="exampleCtrl" placeholder="0000">
+        </div>
+        <div class="col-sm-4 pb-3">
+            <label for="exampleAmount">Amount</label>
+            <div class="input-group">
+                <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+                <input type="text" class="form-control" id="exampleAmount" placeholder="Amount">
+            </div>
+        </div>
+        <div class="col-sm-6 pb-3">
+            <label for="exampleFirst">First Name</label>
+            <input type="text" class="form-control" id="exampleFirst">
+        </div>
+        <div class="col-sm-6 pb-3">
+            <label for="exampleLast">Last Name</label>
+            <input type="text" class="form-control" id="exampleLast">
+        </div>
+        <div class="col-sm-6 pb-3">
+            <label for="exampleCity">City</label>
+            <input type="text" class="form-control" id="exampleCity">
+        </div>
+        <div class="col-sm-3 pb-3">
+            <label for="exampleSt">State</label>
+            <select class="form-control" id="exampleSt">
+                <option>Pick a state</option>
+            </select>
+        </div>
+        <div class="col-sm-3 pb-3">
+            <label for="exampleZip">Postal Code</label>
+            <input type="text" class="form-control" id="exampleZip">
+        </div>
+        <div class="col-md-6 pb-3">
+            <label for="exampleAccount">Color</label>
+            <div class="form-group small">
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Blue
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Red
+                    </label>
+                </div>
+                <div class="form-check form-check-inline disabled">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled=""> Green
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option4"> Yellow
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option5"> Black
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option6"> Orange
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 pb-3">
+            <label for="exampleMessage">Message</label>
+            <textarea class="form-control" id="exampleMessage"></textarea>
+            <small class="text-info">
+                Add the packaging note here.
+            </small>
+        </div>
+        <div class="col-12">
+            <div class="form-row">
+                <label class="col-md col-form-label" for="name">Generated Id</label>
+                <input type="text" class="form-control col-md-4" name="gid" id="gid" />
+                <label class="col-md col-form-label" for="name">Date Assigned</label>
+                <input type="text" class="form-control col-md-4" name="da" id="da" />
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-row">
+                <label class="col-lg-3 col-form-label form-control-label"></label>
+                <div class="col-lg-9">
+                    <input type="reset" class="btn btn-secondary" value="Cancel">
+                    <input type="button" class="btn btn-primary" value="Save Changes">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+-->
